@@ -1,0 +1,57 @@
+CREATE DATABASE Panaderia;
+CREATE DATABASE Escuela;
+CREATE DATABASE Negocio;
+CREATE DATABASE Jugueteria;
+CREATE DATABASE Tienda;
+
+-- Seleccionamos la Base de Datos qu vamos a utilizar.
+USE Escuela;
+
+CREATE TABLE Alumno(
+NC VARCHAR(10),
+Nombre VARCHAR(40),
+APaterno VARCHAR(40),
+AMaterno VARCHAR(40),
+Semestre INT,
+Grupo VARCHAR(1),
+Direccion VARCHAR(50),
+Telefono VARCHAR(15),
+PRIMARY KEY(NC)
+);
+CREATE TABLE Profesor(
+NP VARCHAR(10),
+Nombre VARCHAR(40),
+APaterno VARCHAR(40),
+AMaterno VARCHAR(40),
+Edad INT,
+Estudios VARCHAR(50),
+Direccion VARCHAR(50),
+Telefono VARCHAR(15),
+PRIMARY KEY(NP)
+);
+
+
+CREATE DATABASE Biblioteca;
+USE Biblioteca;
+
+CREATE TABLE Libro(
+NL INT,
+Titulo VARCHAR (50),
+Edicion VARCHAR (30),
+Fecha VARCHAR (30),
+PRIMARY KEY(NL)
+);
+
+CREATE TABLE Autor(
+NA INT,
+Nombre VARCHAR (50),
+PaisOrigen VARCHAR (30),
+Genero VARCHAR (30),
+PRIMARY KEY(NA)
+);
+
+DESCRIBE Libro;
+DESCRIBE Autor;
+
+USE Blibioteca;
+SHOW TABLES;
